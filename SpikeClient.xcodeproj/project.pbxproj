@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0E39ECDB25F999E400B49FF2 /* carthage.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0E39ECDA25F999E400B49FF2 /* carthage.sh */; };
+		0E39ECDC25F99C7600B49FF2 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8EC7B210E661400A81379 /* LoopKit.framework */; };
 		273893FC21667EF80075A197 /* SpikeClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432B0E881CDFC3C50045347B /* SpikeClient.framework */; };
 		273893FD21667EF80075A197 /* SpikeClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 432B0E881CDFC3C50045347B /* SpikeClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		273894012166801B0075A197 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8EC7B210E661400A81379 /* LoopKit.framework */; };
@@ -39,7 +41,6 @@
 		4325E9D5210E6B4400969CE5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4325E9D4210E6B4300969CE5 /* UIColor.swift */; };
 		432B0E931CDFC3C50045347B /* SpikeClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432B0E881CDFC3C50045347B /* SpikeClient.framework */; };
 		432B0E981CDFC3C50045347B /* SpikeClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432B0E971CDFC3C50045347B /* SpikeClientTests.swift */; };
-		43A8EC7C210E661400A81379 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8EC7B210E661400A81379 /* LoopKit.framework */; };
 		43A8EC8A210E664C00A81379 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8EC7B210E661400A81379 /* LoopKit.framework */; };
 		43A8EC8C210E665700A81379 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8EC8B210E665600A81379 /* LoopKitUI.framework */; };
 		43A8EC90210E676500A81379 /* SpikeClientSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8EC8D210E676500A81379 /* SpikeClientSetupViewController.swift */; };
@@ -127,6 +128,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E39ECDA25F999E400B49FF2 /* carthage.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = carthage.sh; sourceTree = "<group>"; };
 		2795404C2165502600D657E5 /* clitester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = clitester; sourceTree = BUILT_PRODUCTS_DIR; };
 		2795404E2165502600D657E5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		27C335DE21667C7A00CF0868 /* singleviewtesterapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = singleviewtesterapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A8EC95210E67B000A81379 /* HealthKit.framework in Frameworks */,
-				43A8EC7C210E661400A81379 /* LoopKit.framework in Frameworks */,
+				0E39ECDC25F99C7600B49FF2 /* LoopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +260,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E39ECD925F999D400B49FF2 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				0E39ECDA25F999E400B49FF2 /* carthage.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		2795404D2165502600D657E5 /* clitester */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +292,7 @@
 		432B0E7E1CDFC3C50045347B = {
 			isa = PBXGroup;
 			children = (
+				0E39ECD925F999D400B49FF2 /* Scripts */,
 				432B0E8A1CDFC3C50045347B /* SpikeClient */,
 				43AB51342133176B00B3D58D /* Common */,
 				432B0E961CDFC3C50045347B /* SpikeClientTests */,
@@ -485,26 +496,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Mark Wilson";
 				TargetAttributes = {
 					2795404B2165502600D657E5 = {
 						CreatedOnToolsVersion = 9.4.1;
-						DevelopmentTeam = L28K36YETG;
+						DevelopmentTeam = AHTZ9U86WA;
 						ProvisioningStyle = Automatic;
 					};
 					27C335DD21667C7A00CF0868 = {
 						CreatedOnToolsVersion = 9.4.1;
-						DevelopmentTeam = L28K36YETG;
+						DevelopmentTeam = AHTZ9U86WA;
 						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					432B0E871CDFC3C50045347B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AHTZ9U86WA;
 						LastSwiftMigration = 1030;
 					};
 					432B0E911CDFC3C50045347B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AHTZ9U86WA;
 						LastSwiftMigration = 1030;
 					};
 					43A8EC75210E653B00A81379 = {
@@ -513,16 +526,16 @@
 					};
 					43A8EC81210E664300A81379 = {
 						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = AHTZ9U86WA;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 432B0E821CDFC3C50045347B /* Build configuration list for PBXProject "SpikeClient" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				fr,
@@ -573,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43AB5127213315D300B3D58D /* Localizable.strings in Resources */,
+				0E39ECDB25F999E400B49FF2 /* carthage.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +620,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -f $PROJECT_DIR/.gitmodules ]; then\n    echo \"Skipping checkout due to presence of .gitmodules file\"\n    if [ $ACTION = \"install\" ]; then\n        echo \"You're installing: Make sure to keep all submodules up-to-date and run carthage build after changes.\"\n    fi\nelse\n    echo \"Bootstrapping carthage dependencies\"\n    /usr/local/bin/carthage bootstrap --project-directory \"$SRCROOT\" --cache-builds\nfi";
+			shellScript = "if [ -f $PROJECT_DIR/.gitmodules ]; then\n    echo \"Skipping checkout due to presence of .gitmodules file\"\n    if [ $ACTION = \"install\" ]; then\n        echo \"You're installing: Make sure to keep all submodules up-to-date and run carthage build after changes.\"\n    fi\nelse\n    echo \"Bootstrapping carthage dependencies\"\n    ./Scripts/carthage.sh bootstrap --project-directory \"$SRCROOT\" --cache-builds --platform ios\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -790,11 +804,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L28K36YETG;
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 			};
@@ -810,11 +824,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L28K36YETG;
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -831,16 +845,16 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L28K36YETG;
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = singleviewtesterapp2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mddub.ShareClient.singleviewtesterapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanmaghera.ShareClient.singleviewtesterapp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -860,16 +874,16 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L28K36YETG;
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = singleviewtesterapp2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mddub.ShareClient.singleviewtesterapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanmaghera.ShareClient.singleviewtesterapp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -880,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
 				CARTHAGE_PLATFORM_PATH_iphoneos = iOS;
 				CARTHAGE_PLATFORM_PATH_iphonesimulator = iOS;
 				CARTHAGE_PLATFORM_PATH_watchos = watchOS;
@@ -904,6 +919,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -929,17 +945,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZED_STRING_MACRO_NAMES = (
 					NSLocalizedString,
 					CFLocalizedString,
 					LocalizedString,
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
@@ -950,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
 				CARTHAGE_PLATFORM_PATH_iphoneos = iOS;
 				CARTHAGE_PLATFORM_PATH_iphonesimulator = iOS;
 				CARTHAGE_PLATFORM_PATH_watchos = watchOS;
@@ -974,6 +991,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -993,7 +1011,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZED_STRING_MACRO_NAMES = (
 					NSLocalizedString,
 					CFLocalizedString,
@@ -1004,6 +1022,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
@@ -1015,27 +1034,28 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SpikeClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mddub.SpikeClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanmaghera.SpikeClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,4";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -1044,33 +1064,34 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SpikeClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mddub.SpikeClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanmaghera.SpikeClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,4";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
 		432B0EA01CDFC3C50045347B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				INFOPLIST_FILE = SpikeClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mddub.SpikeClientTests;
@@ -1082,7 +1103,7 @@
 		432B0EA11CDFC3C50045347B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				INFOPLIST_FILE = SpikeClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mddub.SpikeClientTests;
@@ -1117,11 +1138,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1133,7 +1154,7 @@
 				INFOPLIST_FILE = SpikeClientUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.SpikeClientUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanmaghera.SpikeClientUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1152,11 +1173,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHTZ9U86WA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1168,7 +1189,7 @@
 				INFOPLIST_FILE = SpikeClientUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.SpikeClientUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanmaghera.SpikeClientUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
